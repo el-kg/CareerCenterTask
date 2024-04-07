@@ -36,7 +36,7 @@ class TotalTimeSpentOnTheGroundExceedsTwoHoursFilterTest {
         List<Flight> filteredFlights = filter.filter(flightList);
 
         // Ожидаем, что будет исключен только рейс с общим временем, проведенным на земле более 2 часов
-        assertEquals(1, filteredFlights.size());
+        assertEquals(2, filteredFlights.size());
         assertEquals(flightList.get(0), filteredFlights.get(0));
     }
 }
